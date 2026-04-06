@@ -1,4 +1,4 @@
-import type { PostSummary } from '../db'
+import type { PostSummary, User } from '../db'
 
 function escapeHtml(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
@@ -9,9 +9,15 @@ function formatDate(s: string): string {
   return s.slice(0, 16).replace('T', ' ')
 }
 
+function formatYear(s: string): string {
+  if (!s) return ''
+  return s.slice(0, 4)
+}
+
 export function searchView(
   query: string,
   posts: PostSummary[],
+  users: User[],
   page: number,
   totalPages: number
 ): string {
@@ -31,6 +37,22 @@ export function searchView(
 
   if (!query.trim()) {
     return searchForm + `<p class="text-muted">搜索那些年的记忆...</p>`
+  }
+
+  // User matches
+  let usersHtml = ''
+  if (users.length > 0) {
+    const userCards = users.map(u => `
+      <a href="/user/${encodeURIComponent(u.nickname)}" style="display:inline-block;padding:8px 14px;background:#fff;border:1px solid #e8dfd0;border-radius:6px;text-decoration:none;color:#333;margin:0 6px 6px 0;">
+        <span style="color:#6b4226;font-weight:bold;">${escapeHtml(u.nickname)}</span>
+        <span style="color:#999;font-size:0.82rem;margin-left:6px;">${u.post_count} 篇 · ${formatYear(u.first_post_at)}-${formatYear(u.last_post_at)}</span>
+      </a>
+    `).join('')
+    usersHtml = `
+      <div style="margin-bottom:1.2rem;">
+        <div style="font-size:0.85rem;color:#999;margin-bottom:6px;">匹配用户</div>
+        <div style="display:flex;flex-wrap:wrap;">${userCards}</div>
+      </div>`
   }
 
   // Results
@@ -126,5 +148,5 @@ export function searchView(
 
   const resultInfo = `<p class="text-muted mb-1">搜索: "${escapeHtml(query)}"</p>`
 
-  return searchForm + styles + resultInfo + postsHtml + paginationHtml
+  return searchForm + styles + resultInfo + usersHtml + postsHtml + paginationHtml
 }

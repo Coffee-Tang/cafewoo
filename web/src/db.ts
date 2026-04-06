@@ -153,7 +153,11 @@ export async function getReplies(db: D1Database, postId: number): Promise<Reply[
 }
 
 export async function getUser(db: D1Database, nickname: string): Promise<User | null> {
-  return db.prepare('SELECT id, nickname, post_count, first_post_at, last_post_at FROM users WHERE nickname = ?').bind(nickname).first<User>()
+  return db.prepare(
+    `SELECT u.id, u.nickname, u.first_post_at, u.last_post_at,
+            (SELECT COUNT(*) FROM posts WHERE user_id = u.id) as post_count
+     FROM users u WHERE u.nickname = ?`
+  ).bind(nickname).first<User>()
 }
 
 export async function getUserPosts(
@@ -186,6 +190,23 @@ export async function getUserSignatures(db: D1Database, userId: number): Promise
     .prepare('SELECT id, user_id, content, first_seen_at, last_seen_at FROM user_signatures WHERE user_id = ?')
     .bind(userId)
     .all<Signature>()
+  return results
+}
+
+export async function searchUsers(
+  db: D1Database,
+  query: string
+): Promise<User[]> {
+  const like = `%${query}%`
+  const { results } = await db
+    .prepare(
+      `SELECT u.id, u.nickname, u.first_post_at, u.last_post_at,
+              (SELECT COUNT(*) FROM posts WHERE user_id = u.id) as post_count
+       FROM users u WHERE u.nickname LIKE ?
+       ORDER BY post_count DESC LIMIT 10`
+    )
+    .bind(like)
+    .all<User>()
   return results
 }
 

@@ -16,7 +16,7 @@ export function homeView(boards: Board[], stats: Stats, guestbook: GuestbookEntr
       <div class="stat-card"><div class="stat-num">${stats.total_posts}</div><div class="stat-label">篇文字</div></div>
       <div class="stat-card"><div class="stat-num">${stats.total_users}</div><div class="stat-label">位朋友</div></div>
       <div class="stat-card"><div class="stat-num">${stats.total_boards}</div><div class="stat-label">个版块</div></div>
-      <div class="stat-card"><div class="stat-num">6</div><div class="stat-label">年时光</div></div>
+      <div class="stat-card"><div class="stat-num">10</div><div class="stat-label">年时光</div></div>
     </div>`
 
   // --- Search Bar ---
@@ -55,16 +55,20 @@ export function homeView(boards: Board[], stats: Stats, guestbook: GuestbookEntr
       <h2 class="section-title">时光走廊</h2>
       <div class="timeline-preview">
         <div class="tl-item">
-          <div class="tl-date">2001年10月</div>
-          <div class="tl-text">咖啡看板正式上线，第一批用户入驻...</div>
+          <div class="tl-date">1998年9月</div>
+          <div class="tl-text">厦门因特咖啡屋诞生，湖滨南路的网吧里，第一批用户相遇...</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2001年5月</div>
+          <div class="tl-text">网友投票选定 cafewoo.net 域名，咖啡从信息港独立...</div>
         </div>
         <div class="tl-item">
           <div class="tl-date">2002年</div>
-          <div class="tl-text">社区最活跃的一年，灌水乐园热闹非凡...</div>
+          <div class="tl-text">社区最活跃的一年，向日葵盛开在首页...</div>
         </div>
         <div class="tl-item">
-          <div class="tl-date">2003-2004年</div>
-          <div class="tl-text">新增游戏部落版块，社区渐渐安静...</div>
+          <div class="tl-date">2004-2008年</div>
+          <div class="tl-text">Five Years。网站改版，老用户偶尔回来留言...</div>
         </div>
       </div>
       <div class="mt-1" style="text-align:right;">

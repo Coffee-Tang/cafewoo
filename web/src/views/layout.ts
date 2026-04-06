@@ -150,7 +150,7 @@ export function layout(title: string, activePage: string, body: string): string 
   <header>
     <div class="container">
       <div class="logo">☕ 咖啡看板</div>
-      <div class="subtitle">二〇〇一 — 二〇〇四 · 那些年的咖啡时光</div>
+      <div class="subtitle">一九九八 — 二〇〇八 · 那些年的咖啡时光</div>
     </div>
   </header>
   <nav>

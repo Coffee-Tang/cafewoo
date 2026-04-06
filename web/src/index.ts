@@ -1,5 +1,5 @@
 import { Hono } from 'hono'
-import { getStats, getBoards, getRecentGuestbook, getBoard, getBoardPosts, getPost, getReplies, getUser, getUserPosts, getUserSignatures, searchPosts, getYearMonthCounts, getTimelinePosts, getGuestbookEntries, addGuestbookEntry } from './db'
+import { getStats, getBoards, getRecentGuestbook, getBoard, getBoardPosts, getPost, getReplies, getUser, getUserPosts, getUserSignatures, searchPosts, searchUsers, getYearMonthCounts, getTimelinePosts, getGuestbookEntries, addGuestbookEntry } from './db'
 import type { PostSummary } from './db'
 import { layout } from './views/layout'
 import { homeView } from './views/home'
@@ -58,11 +58,14 @@ app.get('/search', async (c) => {
   const q = c.req.query('q') || ''
   const page = parseInt(c.req.query('page') || '1')
   if (!q.trim()) {
-    return c.html(layout('搜索 - 咖啡看板', '搜索', searchView('', [], 1, 0)))
+    return c.html(layout('搜索 - 咖啡看板', '搜索', searchView('', [], [], 1, 0)))
   }
-  const { posts, total } = await searchPosts(c.env.DB, q, page)
+  const [{ posts, total }, users] = await Promise.all([
+    searchPosts(c.env.DB, q, page),
+    page === 1 ? searchUsers(c.env.DB, q) : Promise.resolve([]),
+  ])
   const totalPages = Math.ceil(total / 20)
-  return c.html(layout(`搜索: ${q} - 咖啡看板`, '搜索', searchView(q, posts, page, totalPages)))
+  return c.html(layout(`搜索: ${q} - 咖啡看板`, '搜索', searchView(q, posts, users, page, totalPages)))
 })
 
 app.get('/timeline', async (c) => {
