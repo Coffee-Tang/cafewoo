@@ -1,11 +1,14 @@
 import { Hono } from 'hono'
-import { getStats, getBoards, getRecentGuestbook, getBoard, getBoardPosts, getPost, getReplies, getUser, getUserPosts, getUserSignatures, searchPosts } from './db'
+import { getStats, getBoards, getRecentGuestbook, getBoard, getBoardPosts, getPost, getReplies, getUser, getUserPosts, getUserSignatures, searchPosts, getYearMonthCounts, getTimelinePosts, getGuestbookEntries, addGuestbookEntry } from './db'
+import type { PostSummary } from './db'
 import { layout } from './views/layout'
 import { homeView } from './views/home'
 import { boardView } from './views/board'
 import { postView } from './views/post'
 import { userView } from './views/user'
 import { searchView } from './views/search'
+import { timelineView } from './views/timeline'
+import { guestbookView } from './views/guestbook'
 
 type Bindings = { DB: D1Database }
 const app = new Hono<{ Bindings: Bindings }>()
@@ -59,6 +62,40 @@ app.get('/search', async (c) => {
   const { posts, total } = await searchPosts(c.env.DB, q, page)
   const totalPages = Math.ceil(total / 20)
   return c.html(layout(`搜索: ${q} - 咖啡看板`, '搜索', searchView(q, posts, page, totalPages)))
+})
+
+app.get('/timeline', async (c) => {
+  const year = c.req.query('year') ? parseInt(c.req.query('year')!) : null
+  const month = c.req.query('month') ? parseInt(c.req.query('month')!) : undefined
+  const yearMonthCounts = await getYearMonthCounts(c.env.DB)
+  let posts: PostSummary[] = []
+  if (year) {
+    posts = await getTimelinePosts(c.env.DB, year, month)
+  }
+  return c.html(layout('时间线 - 咖啡看板', '时间线', timelineView(yearMonthCounts, posts, year, month || null)))
+})
+
+app.get('/guestbook', async (c) => {
+  const page = parseInt(c.req.query('page') || '1')
+  const msg = c.req.query('msg') || undefined
+  const { entries, total } = await getGuestbookEntries(c.env.DB, page)
+  const totalPages = Math.ceil(total / 20)
+  return c.html(layout('留言板 - 咖啡看板', '留言板', guestbookView(entries, page, totalPages, msg)))
+})
+
+app.post('/guestbook', async (c) => {
+  const form = await c.req.formData()
+  const nickname = (form.get('nickname') as string || '').trim() || null
+  const content = (form.get('content') as string || '').trim()
+  if (!content || content.length > 2000) {
+    return c.redirect('/guestbook?msg=error')
+  }
+  const ip = c.req.header('CF-Connecting-IP') || c.req.header('X-Forwarded-For') || 'unknown'
+  const data = new TextEncoder().encode(ip + 'cafewoo-salt')
+  const hash = await crypto.subtle.digest('SHA-256', data)
+  const ipHash = Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, '0')).join('').slice(0, 16)
+  await addGuestbookEntry(c.env.DB, nickname || '匿名访客', content, ipHash)
+  return c.redirect('/guestbook?msg=success')
 })
 
 export default app
