@@ -56,17 +56,24 @@ def parse_rails_page(raw_bytes, post_id):
     if end_idx >= 0:
         text = text[:end_idx]
 
-    # 标题：<title>咖啡论坛 > 版块名 > 标题</title>
-    title_match = re.search(r"<title>(.*?)</title>", text)
+    # 标题：优先从 <legend> 提取，其次从 <title> 提取
     title = None
     board_name = None
+
+    legend_match = re.search(r"<legend>(.*?)</legend>", text)
+    if legend_match:
+        title = legend_match.group(1).strip()
+
+    title_match = re.search(r"<title>(.*?)</title>", text)
     if title_match:
         parts = title_match.group(1).split("&gt;")
         if len(parts) >= 3:
             board_name = parts[1].strip()
-            title = parts[2].strip()
+            if not title:
+                title = parts[2].strip()
         elif len(parts) >= 2:
-            title = parts[-1].strip()
+            if not title:
+                title = parts[-1].strip()
 
     board_id = BOARD_NAME_TO_ID.get(board_name, 8)  # 默认放未知版块
 
