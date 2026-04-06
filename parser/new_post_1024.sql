@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1025, 186042, 12, 1529, '我怀疑', '？？？？？？？？？？？？？？？？', '？？？？？？？？？？？？？？？？', NULL, '2002-10-13 12:22:00', 0, '20021112155551_bbsid_186042_board_12_a4e83fc0d4.html', '20021112155551');

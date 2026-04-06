@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (941, 179843, 11, 240, '有链接吗', '老大哦，为什么没有和足球站点的链接呢？', '老大哦，为什么没有和足球站点的链接呢？', NULL, '2002-08-24 11:41:00', 1, '20021029010851_bbsid_179843_board_11_6fa27e5f20.html', '20021029010851');

@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1563, 192934, 11, 179, '通知', '由于时间紧迫,请各斑竹在元月十日前把文章筛选工作完成并发送至我站内信箱.谢谢.', '由于时间紧迫,请各斑竹在元月十日前把文章筛选工作完成并发送至我站内信箱.谢谢.', NULL, '2003-01-08 21:38:00', 3, '20030317174108_bbsid_192934_board_11_a777f15906.html', '20030317174108');

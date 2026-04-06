@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1724, 199220, 9, 164, '真衰', '脚踝严重扭伤，肿得像个大肉包，痛.......！！瀑布汗~~~~~~~~~', '脚踝严重扭伤，肿得像个大肉包，痛.......！！瀑布汗~~~~~~~~~', NULL, '2003-03-29 20:31:00', 10, '20030425044456_bbsid_199220_board_9_105edc678c.html', '20030425044456');

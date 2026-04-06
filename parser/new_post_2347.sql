@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2348, 213193, 11, 198, '咖啡的版面图画', '咖啡的版面图画做得越来越有特色了！！！！', '咖啡的版面图画做得越来越有特色了！！！！', NULL, '2003-09-10 13:36:00', 2, '20031212015819_bbsid_213193_board_11_460d66b9e4.html', '20031212015819');

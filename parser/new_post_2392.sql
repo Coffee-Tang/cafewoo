@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2393, 219111, 9, 2231, '和南洋学院是赢是输', '和南洋学院是赢是输', '和南洋学院是赢是输', NULL, '2003-11-21 20:46:00', 7, '20031222063946_bbsid_219111_board_9_bb30a3bcd1.html', '20031222063946');

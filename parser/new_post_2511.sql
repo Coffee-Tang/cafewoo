@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2512, 203186, 9, 307, '这星期有人踢不？？', '三个星期没踢了诶~~~~脚痒！！~~~看到花盆掉下来都想用脚停啊~~', '三个星期没踢了诶~~~~脚痒！！~~~看到花盆掉下来都想用脚停啊~~', NULL, '2003-05-23 17:59:00', 0, '20040106190448_bbsid_203186_board_9_f7e09941e9.html', '20040106190448');

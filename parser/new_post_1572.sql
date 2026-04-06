@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1573, 196965, 9, 1994, '23日比赛结果？', '为什么没人贴23号的比赛结果啊？', '为什么没人贴23号的比赛结果啊？', NULL, '2003-02-24 09:43:00', 0, '20030325055705_bbsid_196965_board_9_91602af495.html', '20030325055705');

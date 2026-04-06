@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1418, 192106, 3, 921, '[转贴][转贴]英雄下载地址', 'http://yzyu.vicp.net/hero.rm', 'http://yzyu.vicp.net/hero.rm', NULL, '2002-12-26 20:07:00', 0, '20030217224356_bbsid_192106_board_3_2cf7818668.html', '20030217224356');

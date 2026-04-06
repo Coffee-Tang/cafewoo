@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1263, 190511, 9, 1634, '笨头，你说的茶馆叫什么名字？', '确定能看到冠军杯？', '确定能看到冠军杯？', NULL, '2002-12-02 23:03:00', 6, '20021230103020_bbsid_190511_board_9_628b733d24.html', '20021230103020');

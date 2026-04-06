@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1926, 208135, 9, 164, '请教一个问题', '有谁知道腰椎键盘突出的症状是什么？ 欢迎农民伯伯和吃前怪前来回答~！！', '有谁知道腰椎键盘突出的症状是什么？ 欢迎农民伯伯和吃前怪前来回答~！！', NULL, '2003-07-10 11:10:00', 7, '20030721102359_bbsid_208135_board_9_764f64b9be.html', '20030721102359');

@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (807, 175301, 7, 1235, '藏在眼镜后面的……', '', '', NULL, '2002-08-02 22:35:00', 15, '20020826065348_bbsid_175301_board_7_be98fcc243.html', '20020826065348');

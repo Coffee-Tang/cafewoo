@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (992, 183912, 9, 164, '大家想比赛吗?', '大家想比赛了吗???', '大家想比赛了吗???', NULL, '2002-09-22 15:46:00', 0, '20021108205322_bbsid_183912_board_9_8441b3e47e.html', '20021108205322');

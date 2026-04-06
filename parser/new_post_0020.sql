@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (21, 125540, 11, 20, '原味咖啡呢？', '怎么一下子没了？', '怎么一下子没了？', NULL, '2001-09-28 12:00:00', 3, '20011125235923_bbsid_125540_board_11_263f3b3494.html', '20011125235923');

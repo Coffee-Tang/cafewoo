@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1481, 194639, 9, 164, '春节期间有没有比赛阿？', '（接标题）也好保持状态阿', '（接标题）也好保持状态阿', NULL, '2003-01-27 17:49:00', 5, '20030228125341_bbsid_194639_board_9_0063fd55cb.html', '20030228125341');

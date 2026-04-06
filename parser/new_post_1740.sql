@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1741, 199511, 9, 2049, '十一中场地不错', '最近可有比赛或训练？十一中场地哪位兄弟再联系一下？', '最近可有比赛或训练？十一中场地哪位兄弟再联系一下？', NULL, '2003-04-02 23:26:00', 6, '20030425045445_bbsid_199511_board_9_6889d1dc2c.html', '20030425045445');

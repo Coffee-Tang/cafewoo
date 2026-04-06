@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2028, 210749, 10, 2271, '周杰论发片大，谁买了？？', '如题，大家觉得怎么样？', '如题，大家觉得怎么样？', '大家都要好好的，为了守护我们的天使~', '2003-08-05 13:28:00', 28, '20030810093329_bbsid_210749_board_10_63e37d20fb.html', '20030810093329');

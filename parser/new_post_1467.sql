@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1468, 195293, 9, 164, '咖啡足球队最新通知', '初三没有人踢球，谢谢', '初三没有人踢球，谢谢', NULL, '2003-02-02 18:54:00', 2, '20030228123845_bbsid_195293_board_9_85e6f10806.html', '20030228123845');

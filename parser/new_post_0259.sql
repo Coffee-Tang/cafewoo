@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (260, 155666, 11, 637, 'ID送人', '本人把此ID于今日送人，请大家注意/后果本人以后怒不负责，特此声明', '本人把此ID于今日送人，请大家注意/后果本人以后怒不负责，特此声明', NULL, '2002-03-27 18:19:00', 0, '20020419182743_bbsid_155666_board_11_a2ff419247.html', '20020419182743');

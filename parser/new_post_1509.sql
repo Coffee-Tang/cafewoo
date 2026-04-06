@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1510, 196220, 10, 1423, '情人节快乐', 'Ｈappy Saint Valentine''s Day！', 'Ｈappy Saint Valentine''s Day！', NULL, '2003-02-13 19:18:00', 9, '20030312131235_bbsid_196220_board_10_cf5a8785fd.html', '20030312131235');

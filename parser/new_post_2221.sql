@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2222, 212997, 13, 490, '咖啡明天五周岁', '路过的都来签名留个念吧,做个生日礼物:)', '路过的都来签名留个念吧,做个生日礼物:)', NULL, '2003-09-07 12:46:00', 117, '20031020210035_bbsid_212997_board_13_402fe1dea1.html', '20031020210035');

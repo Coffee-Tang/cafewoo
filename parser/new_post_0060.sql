@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (61, 133846, 9, 162, '有人在吗? 有没有人记得阿拉?', 'me&lt;===被遗忘的角落', 'me<===被遗忘的角落', '叛逆是为了自由...', '2001-11-20 00:35:00', 9, '20011224052315_bbsid_133846_board_9_9972569f9f.html', '20011224052315');

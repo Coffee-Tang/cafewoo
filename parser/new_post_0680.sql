@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (681, 173939, 11, 138, '停止讨论封ID事件', '出现这类的文章都删了', '出现这类的文章都删了', NULL, '2002-07-27 02:12:00', 0, '20020818160119_bbsid_173939_board_11_835e30aa5d.html', '20020818160119');

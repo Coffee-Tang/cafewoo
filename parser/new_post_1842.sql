@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1843, 205468, 11, 45, 'LUDO~', '斑竹的ID要怎么告诉我？还有怎样使用呢？', '斑竹的ID要怎么告诉我？还有怎样使用呢？', NULL, '2003-06-18 15:40:00', 4, '20030719055447_bbsid_205468_board_11_c7693dad93.html', '20030719055447');

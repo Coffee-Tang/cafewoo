@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1180, 188400, 9, 1634, '农民伯伯，什么时候约老外呀？', '都说了那么久了，到底什么时候跟他们再战一场呢？', '都说了那么久了，到底什么时候跟他们再战一场呢？', NULL, '2002-11-08 11:17:00', 7, '20021224170958_bbsid_188400_board_9_1fc292b4e6.html', '20021224170958');

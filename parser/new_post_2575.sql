@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2576, 221749, 16, 1125, '喜欢网游的家伙自报大名下', '交个朋友,以后一起统领游戏天下', '交个朋友,以后一起统领游戏天下', NULL, '2003-12-30 11:37:00', 0, '20040211150547_bbsid_221749_board_16_5b5ae1201c.html', '20040211150547');

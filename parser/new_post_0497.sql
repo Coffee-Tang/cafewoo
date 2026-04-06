@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (498, 161519, 3, 888, '想找pachebel canon', '想找有这首曲子的CD，正版最好，厦门哪里有卖的啊？求助求助！！', '想找有这首曲子的CD，正版最好，厦门哪里有卖的啊？求助求助！！', NULL, '2002-05-10 22:02:00', 5, '20020617191914_bbsid_161519_board_3_0ab4062aff.html', '20020617191914');

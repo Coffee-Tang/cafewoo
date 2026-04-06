@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (887, 183822, 12, 140, '快去查查你的死亡日期！', 'http://www.deathclock.com/', 'http://www.deathclock.com/', NULL, '2002-09-21 23:29:00', 5, '20021019165211_bbsid_183822_board_12_d425339b81.html', '20021019165211');

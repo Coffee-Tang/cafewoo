@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2694, 223726, 9, 240, '农民来一下', '我们31号有没有比赛？？四方有一场厦大的人工场，在问有兴趣否？', '我们31号有没有比赛？？四方有一场厦大的人工场，在问有兴趣否？', NULL, '2004-01-25 19:57:00', 2, '20040225153017_bbsid_223726_board_9_1e7b1bf3a1.html', '20040225153017');

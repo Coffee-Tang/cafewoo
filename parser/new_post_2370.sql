@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2371, 217851, 9, 164, '号码更新', '从今天起，俺的联系方法更改为：13055517616', '从今天起，俺的联系方法更改为：13055517616', NULL, '2003-11-08 21:23:00', 4, '20031222040729_bbsid_217851_board_9_9d1a47c072.html', '20031222040729');

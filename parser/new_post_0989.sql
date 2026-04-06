@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (990, 184909, 9, 240, '5折的球鞋', '中山路来雅底层LOTTO专柜在打5折，想买鞋的赶快哦', '中山路来雅底层LOTTO专柜在打5折，想买鞋的赶快哦', NULL, '2002-10-01 21:09:00', 11, '20021108204847_bbsid_184909_board_9_6039546053.html', '20021108204847');

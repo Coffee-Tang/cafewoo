@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2507, 213514, 8, 307, '咖啡相册好象上传不了了~~', '谁知道是为什么？', '谁知道是为什么？', NULL, '2003-09-14 14:53:00', 2, '20040106185646_bbsid_213514_board_8_d5b9b7b82d.html', '20040106185646');

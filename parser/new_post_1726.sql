@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1727, 198501, 9, 135, '总结?', '大家是否把这次比赛的体会说一说,总结一下~~发现不足才能不断进步~~', '大家是否把这次比赛的体会说一说,总结一下~~发现不足才能不断进步~~', NULL, '2003-03-17 12:19:00', 8, '20030425044715_bbsid_198501_board_9_ef45db2b30.html', '20030425044715');

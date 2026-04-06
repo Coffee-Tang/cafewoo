@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (268, 156036, 11, 643, '有人知道新沃的网址吗？~', '有人知道新沃的网址吗~~知道的话~敬请告诉我~~~~先谢了~~：）', '有人知道新沃的网址吗~~知道的话~敬请告诉我~~~~先谢了~~：）', NULL, '2002-03-30 19:24:00', 1, '20020419200027_bbsid_156036_board_11_d6ff7989f0.html', '20020419200027');

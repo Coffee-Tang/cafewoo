@@ -1,1 +1,0 @@
-INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1297, 190804, 6, 685, '哪位才子才女能对我这个对联', '提锡壶 游西湖 锡壶掉西湖 惜哉锡壶', '提锡壶 游西湖 锡壶掉西湖 惜哉锡壶', NULL, '2002-12-07 18:10:00', 19, '20030104151507_bbsid_190804_board_6_1c9cdac9cb.html', '20030104151507');
