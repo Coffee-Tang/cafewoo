@@ -7,3 +7,5 @@ parser/cafewoo_d1*.sql
 parser/*.sqlite
 .wrangler/
 downloaded_html/
+web/node_modules/
+web/.wrangler/
