@@ -147,7 +147,7 @@ export function aboutView(): string {
 
 <div class="about-intro">
   <h2>关于咖啡</h2>
-  <p>这是一个关于厦门、关于青春、关于一杯咖啡的故事。1998 — 2008，十年间，2596 个人在这里写下了 2713 篇文字。</p>
+  <p>这是一个关于厦门、关于青春、关于一杯咖啡的故事。1998 — 2008，十年间，2613 个人在这里写下了 2923 篇文字。</p>
 </div>
 
 <div class="about-timeline">
@@ -199,7 +199,7 @@ export function aboutView(): string {
 
   <div class="about-milestone">
     <h3>2026</h3>
-    <p>二十多年后，从 Web Archive 找回了这些页面。2713 篇帖子重新上线。</p>
+    <p>二十多年后，从 Web Archive 找回了这些页面。2923 篇帖子重新上线。</p>
     <div class="about-quote">咖啡是一出没有终点的电影！！！—— 陈陈</div>
   </div>
 
