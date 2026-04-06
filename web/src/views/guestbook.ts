@@ -6,7 +6,18 @@ function escapeHtml(s: string): string {
 
 function formatDate(s: string): string {
   if (!s) return ''
-  return s.slice(0, 16).replace('T', ' ')
+  try {
+    const d = new Date(s + 'Z')  // 解析为 UTC
+    const cn = new Date(d.getTime() + 8 * 3600 * 1000)  // 转东八区
+    const y = cn.getUTCFullYear()
+    const m = String(cn.getUTCMonth() + 1).padStart(2, '0')
+    const day = String(cn.getUTCDate()).padStart(2, '0')
+    const h = String(cn.getUTCHours()).padStart(2, '0')
+    const min = String(cn.getUTCMinutes()).padStart(2, '0')
+    return `${y}-${m}-${day} ${h}:${min}`
+  } catch {
+    return s.slice(0, 16).replace('T', ' ')
+  }
 }
 
 export function guestbookView(

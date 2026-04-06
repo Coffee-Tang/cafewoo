@@ -10,6 +10,7 @@ import { searchView } from './views/search'
 import { timelineView } from './views/timeline'
 import { guestbookView } from './views/guestbook'
 import { aboutView } from './views/about'
+import { peopleView, getPeopleData } from './views/people'
 
 type Bindings = { DB: D1Database }
 const app = new Hono<{ Bindings: Bindings }>()
@@ -89,6 +90,11 @@ app.get('/guestbook', async (c) => {
 
 app.get('/about', (c) => {
   return c.html(layout('关于 - 咖啡看板', '关于', aboutView()))
+})
+
+app.get('/people', (c) => {
+  const data = getPeopleData()
+  return c.html(layout('人物关系 - 咖啡看板', '人物', peopleView(data.circles, data.topPairs, data.keyPeople, data.timeline)))
 })
 
 app.post('/guestbook', async (c) => {

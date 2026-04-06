@@ -4,6 +4,7 @@ export function layout(title: string, activePage: string, body: string): string 
     { label: '时间线', href: '/timeline', key: '时间线' },
     { label: '搜索', href: '/search', key: '搜索' },
     { label: '留言板', href: '/guestbook', key: '留言板' },
+    { label: '人物', href: '/people', key: '人物' },
     { label: '关于', href: '/about', key: '关于' },
   ]
 

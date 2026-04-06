@@ -9,6 +9,22 @@ function escapeHtml(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 }
 
+function formatDateCN(s: string): string {
+  if (!s) return ''
+  try {
+    const d = new Date(s + 'Z')
+    const cn = new Date(d.getTime() + 8 * 3600 * 1000)
+    const y = cn.getUTCFullYear()
+    const m = String(cn.getUTCMonth() + 1).padStart(2, '0')
+    const day = String(cn.getUTCDate()).padStart(2, '0')
+    const h = String(cn.getUTCHours()).padStart(2, '0')
+    const min = String(cn.getUTCMinutes()).padStart(2, '0')
+    return `${y}-${m}-${day} ${h}:${min}`
+  } catch {
+    return s.slice(0, 16)
+  }
+}
+
 export function homeView(boards: Board[], stats: Stats, guestbook: GuestbookEntry[]): string {
   // --- Stats Row ---
   const statsHtml = `
@@ -82,7 +98,7 @@ export function homeView(boards: Board[], stats: Stats, guestbook: GuestbookEntr
     guestbookCards = guestbook
       .map(
         (e) => `<div class="gb-entry card mb-1">
-          <div class="gb-meta text-muted">${escapeHtml(e.nickname)} · ${e.created_at}</div>
+          <div class="gb-meta text-muted">${escapeHtml(e.nickname)} · ${formatDateCN(e.created_at)}</div>
           <div class="gb-content">${escapeHtml(e.content)}</div>
         </div>`
       )
