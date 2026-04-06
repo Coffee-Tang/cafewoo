@@ -240,7 +240,16 @@ def parse_page(content: str) -> PostData:
     rows = row_pattern.findall(content)
 
     if not rows:
-        raise ValueError("No post rows found in HTML")
+        # Some archived pages are parking/error pages (e.g. BlueHost)
+        # with no BBS content at all.  Return an empty PostData.
+        return PostData(
+            title=title,
+            author="",
+            content="",
+            content_text="",
+            signature=None,
+            posted_at=None,
+        )
 
     # First row is the main post
     author_html, body_html = rows[0]

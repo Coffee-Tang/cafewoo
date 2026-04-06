@@ -190,3 +190,39 @@ class TestBoard11DomainPost:
     def test_dataclass_types(self, post_board11):
         assert isinstance(post_board11, PostData)
         assert isinstance(post_board11.replies[0], ReplyData)
+
+
+# ---- batch test: all downloaded files ----
+
+class TestParseAllFiles:
+    def test_parse_all_files_no_crash(self):
+        """All 2713 HTML files parse without errors and have authors."""
+        download_dir = os.path.join(os.path.dirname(__file__), "..", "downloaded_html")
+        files = [f for f in os.listdir(download_dir) if f.endswith(".html")]
+        assert len(files) > 2700, f"Expected 2700+ files, got {len(files)}"
+
+        errors = []
+        stats = {"total": 0, "with_title": 0, "with_sig": 0, "with_replies": 0, "no_author": 0}
+
+        for f in files:
+            stats["total"] += 1
+            try:
+                raw = open(os.path.join(download_dir, f), "rb").read()
+                content = strip_wayback(raw)
+                page = parse_page(content)
+                if not page.author:
+                    stats["no_author"] += 1
+                if page.title:
+                    stats["with_title"] += 1
+                if page.signature:
+                    stats["with_sig"] += 1
+                if page.replies:
+                    stats["with_replies"] += 1
+            except Exception as e:
+                errors.append(f"{f}: {e}")
+
+        # Print stats for visibility
+        print(f"\nParse stats: {stats}")
+
+        assert len(errors) == 0, f"{len(errors)} files failed:\n" + "\n".join(errors[:20])
+        assert stats["no_author"] < 50, f"Too many files without author: {stats['no_author']}"
