@@ -164,6 +164,7 @@ export function layout(title: string, activePage: string, body: string): string 
   <footer>
     <div class="container">咖啡看板 · 1998–2008 · 档案由 Web Archive 保存</div>
   </footer>
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "adc96aecb9094dccbd1b179fa134bf42"}'></script>
 </body>
 </html>`
 }
