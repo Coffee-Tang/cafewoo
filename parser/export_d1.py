@@ -112,8 +112,7 @@ def main():
     )
 
     with open(output_path, "w", encoding="utf-8") as f:
-        f.write("-- cafewoo D1 export (SQLite-compatible)\n")
-        f.write("PRAGMA journal_mode=WAL;\n\n")
+        f.write("-- cafewoo D1 export (SQLite-compatible)\n\n")
 
         # Create tables and export data
         for table_name, spec in TABLES.items():
@@ -126,26 +125,12 @@ def main():
             cur = conn.cursor()
             cur.execute(f"SELECT {', '.join(columns)} FROM {table_name}")
 
-            batch = []
+            cols_str = ", ".join(columns)
             row_count = 0
             for row in cur:
                 values = ", ".join(escape_sql(v) for v in row)
-                batch.append(f"({values})")
+                f.write(f"INSERT INTO {table_name} ({cols_str}) VALUES ({values});\n")
                 row_count += 1
-
-                # Write in batches of 500 for performance
-                if len(batch) >= 500:
-                    cols_str = ", ".join(columns)
-                    f.write(f"INSERT INTO {table_name} ({cols_str}) VALUES\n")
-                    f.write(",\n".join(batch))
-                    f.write(";\n")
-                    batch = []
-
-            if batch:
-                cols_str = ", ".join(columns)
-                f.write(f"INSERT INTO {table_name} ({cols_str}) VALUES\n")
-                f.write(",\n".join(batch))
-                f.write(";\n")
 
             f.write("\n")
             cur.close()

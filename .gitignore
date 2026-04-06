@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .DS_Store
 /tmp/
+parser/cafewoo_d1*.sql
+parser/*.sqlite
+.wrangler/
+downloaded_html/

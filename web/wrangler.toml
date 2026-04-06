@@ -2,10 +2,15 @@ name = "cafewoo"
 main = "src/index.ts"
 compatibility_date = "2024-12-01"
 
+routes = [
+  { pattern = "www.cafewoo.net", custom_domain = true },
+  { pattern = "cafewoo.net", custom_domain = true }
+]
+
 [[d1_databases]]
 binding = "DB"
 database_name = "cafewoo"
-database_id = "local"
+database_id = "9da88d24-52ab-46e5-9d79-2ea538a755c2"
 
 [assets]
 directory = "./public"
