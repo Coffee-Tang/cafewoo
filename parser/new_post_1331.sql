@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1332, 190857, 11, 659, '110~', '为什么不能注册啊？？？', '为什么不能注册啊？？？', NULL, '2002-12-08 10:51:00', 0, '20030118011000_bbsid_190857_board_11_25fc1eac5e.html', '20030118011000');

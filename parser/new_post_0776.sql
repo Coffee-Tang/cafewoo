@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (777, 175210, 6, 1228, '[转贴]哈哈原来甜心是孤儿！', '哈哈原来甜心是孤儿！怪不得这么无聊~~~', '哈哈原来甜心是孤儿！怪不得这么无聊~~~', NULL, '2002-08-02 15:11:00', 0, '20020825034344_bbsid_175210_board_6_6e2c574f74.html', '20020825034344');

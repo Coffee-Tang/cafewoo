@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2162, 214766, 16, 758, '人气不足啊~~', '来这里发帖的人是不是少了点？~~咖啡难道就没几个玩游戏的吗？`', '来这里发帖的人是不是少了点？~~咖啡难道就没几个玩游戏的吗？`', NULL, '2003-10-03 11:32:00', 8, '20031013191000_bbsid_214766_board_16_af00b6a8e9.html', '20031013191000');

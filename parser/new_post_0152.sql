@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (153, 135776, 9, 167, 'TO 双子', '双子，我还没有队服啊。。。。。。。。。。。。。。。。。。。。。。', '双子，我还没有队服啊。。。。。。。。。。。。。。。。。。。。。。', NULL, '2001-12-04 16:07:00', 3, '20011226100022_bbsid_135776_board_9_09c9f9a0a1.html', '20011226100022');

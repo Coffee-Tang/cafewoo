@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1845, 205852, 11, 34, '其实不是什么大问题', '咖啡的钟好像走快了？大概快了15分钟？', '咖啡的钟好像走快了？大概快了15分钟？', NULL, '2003-06-23 00:27:00', 1, '20030719055721_bbsid_205852_board_11_ca15166afb.html', '20030719055721');

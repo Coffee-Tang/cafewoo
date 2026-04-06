@@ -1,0 +1,6 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2063, 209992, 7, 1215, '我爱厦门，......', '我爱厦门，海风习习的鼓浪屿......
+<br>
+<br>
+<br>在此抛砖，厦门还有什么值得你记忆的吗？一人写一句吧！', '我爱厦门，海风习习的鼓浪屿......
+
+在此抛砖，厦门还有什么值得你记忆的吗？一人写一句吧！', NULL, '2003-07-28 22:20:00', 15, '20030819191635_bbsid_209992_board_7_8c5f3b1ff8.html', '20030819191635');

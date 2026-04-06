@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (409, 164205, 11, 941, 'To 非尔', '可以帮我把我所发过的文章的删掉吗？谢谢~！', '可以帮我把我所发过的文章的删掉吗？谢谢~！', '', '2002-06-02 18:14:00', 0, '20020613114405_bbsid_164205_board_11_41318a9b69.html', '20020613114405');

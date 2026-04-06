@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1754, 200146, 9, 240, '去茶馆', '又有冠军杯了，听说某些茶馆可以看到，谁愿意组织一下，安排一下，我不知道哪家有呀？？', '又有冠军杯了，听说某些茶馆可以看到，谁愿意组织一下，安排一下，我不知道哪家有呀？？', NULL, '2003-04-14 20:11:00', 11, '20030502150535_bbsid_200146_board_9_4be70e1cc8.html', '20030502150535');

@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2701, 224156, 9, 457, '今天下午的比赛怎么样了？', '怎么没人来报导一下，是不是踢完球去哪里集体腐败去了..', '怎么没人来报导一下，是不是踢完球去哪里集体腐败去了..', NULL, '2004-01-31 23:54:00', 2, '20040225153919_bbsid_224156_board_9_4dd70181e9.html', '20040225153919');

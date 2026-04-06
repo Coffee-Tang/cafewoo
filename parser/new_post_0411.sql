@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (412, 164253, 11, 568, '呵呵，谢啦', '谢谢LUDO的回复。', '谢谢LUDO的回复。', NULL, '2002-06-03 02:16:00', 0, '20020613114501_bbsid_164253_board_11_6335f04b7f.html', '20020613114501');

@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (74, 134683, 9, 180, '双子前辈请进', '请问咖啡二站的网址是什么', '请问咖啡二站的网址是什么', '从意志上击跨对手，你就永远不是失败者!', '2001-11-25 21:46:00', 2, '20011224124432_bbsid_134683_board_9_b1c9888671.html', '20011224124432');

@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (531, 164358, 9, 164, '急需一场比赛来发泄心中的不满！！', '急需一场比赛来发泄心中的不满！！', '急需一场比赛来发泄心中的不满！！', NULL, '2002-06-04 16:53:00', 2, '20020618223055_bbsid_164358_board_9_21f792ad58.html', '20020618223055');

@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (410, 164059, 11, 568, 'to ludo', '你明明 有上来看文章，为什么不理会我的问题呢，我可是每天都上来确认你是否回信啊。', '你明明 有上来看文章，为什么不理会我的问题呢，我可是每天都上来确认你是否回信啊。', '', '2002-05-31 20:52:00', 0, '20020613114422_bbsid_164059_board_11_d45385e8a8.html', '20020613114422');

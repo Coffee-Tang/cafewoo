@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (690, 174079, 9, 164, '百家争鸣，百花齐放', '欢迎就昨天的比赛发表个人的观点和意见，以及今后改进的方法', '欢迎就昨天的比赛发表个人的观点和意见，以及今后改进的方法', NULL, '2002-07-28 08:36:00', 31, '20020818161952_bbsid_174079_board_9_8bdb406072.html', '20020818161952');

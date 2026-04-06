@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1174, 188185, 3, 1403, 'help', '哪有谭咏麟的《象我这样的朋友》MP3下载啊', '哪有谭咏麟的《象我这样的朋友》MP3下载啊', NULL, '2002-11-05 22:28:00', 1, '20021220070012_bbsid_188185_board_3_a6cb9fb4ef.html', '20021220070012');

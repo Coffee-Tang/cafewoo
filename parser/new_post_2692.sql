@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2693, 223036, 9, 610, 'HELLO', '这星期没踢球吗?', '这星期没踢球吗?', NULL, '2004-01-16 16:42:00', 2, '20040225152724_bbsid_223036_board_9_8e6f02aecc.html', '20040225152724');

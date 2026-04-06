@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1597, 5136, 11, 1212, '请教LuDo大师', 'LUDO啊，，那新的咖啡心情版的风格是什么的啊？我怎么都还没看懂呢？', 'LUDO啊，，那新的咖啡心情版的风格是什么的啊？我怎么都还没看懂呢？', NULL, '1999-10-12 17:55:00', 1, '20030325073607_bbsid_5136_board_11_a092017c0f.html', '20030325073607');

@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (734, 174798, 11, 758, '恶意灌水~~', '无聊灌水~~~没事~~~', '无聊灌水~~~没事~~~', NULL, '2002-07-31 20:08:00', 2, '20020821170617_bbsid_174798_board_11_ba996c06ba.html', '20020821170617');

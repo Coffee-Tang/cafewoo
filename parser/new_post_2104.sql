@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2105, 211335, 9, 164, '大家讨论一下', '为什么每逢对手稍微有组织一些我们便会溃败呢？难道我们只能和中学球队踢球？', '为什么每逢对手稍微有组织一些我们便会溃败呢？难道我们只能和中学球队踢球？', NULL, '2003-08-11 19:28:00', 8, '20031003032744_bbsid_211335_board_9_98d89d5c78.html', '20031003032744');

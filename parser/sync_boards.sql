@@ -1,0 +1,13 @@
+UPDATE boards SET post_count = 191 WHERE id = 1;
+UPDATE boards SET post_count = 177 WHERE id = 2;
+UPDATE boards SET post_count = 166 WHERE id = 3;
+UPDATE boards SET post_count = 341 WHERE id = 5;
+UPDATE boards SET post_count = 320 WHERE id = 6;
+UPDATE boards SET post_count = 163 WHERE id = 7;
+UPDATE boards SET post_count = 180 WHERE id = 8;
+UPDATE boards SET post_count = 257 WHERE id = 9;
+UPDATE boards SET post_count = 389 WHERE id = 10;
+UPDATE boards SET post_count = 154 WHERE id = 11;
+UPDATE boards SET post_count = 329 WHERE id = 12;
+UPDATE boards SET post_count = 223 WHERE id = 13;
+UPDATE boards SET post_count = 25 WHERE id = 16;

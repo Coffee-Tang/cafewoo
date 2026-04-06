@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1021, 186159, 12, 1188, '大家贴一下心目中的ANOTHER吧', '如上如上。。', '如上如上。。', NULL, '2002-10-14 17:38:00', 0, '20021112155309_bbsid_186159_board_12_a51b4f35d6.html', '20021112155309');

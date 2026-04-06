@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2431, 219916, 9, 164, '一个消息', '据说假日和东汇隆打平！！大家有什么感想？', '据说假日和东汇隆打平！！大家有什么感想？', NULL, '2003-12-02 21:10:00', 11, '20031228101131_bbsid_219916_board_9_00f2f3c14b.html', '20031228101131');

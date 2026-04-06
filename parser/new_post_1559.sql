@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1560, 194719, 11, 758, '祝贺新春~~老咖啡签到！', '呵呵。。。在咖啡混上两年以上的，在这里还几个勒？', '呵呵。。。在咖啡混上两年以上的，在这里还几个勒？', NULL, '2003-01-28 09:31:00', 31, '20030317172132_bbsid_194719_board_11_d6ebde665f.html', '20030317172132');

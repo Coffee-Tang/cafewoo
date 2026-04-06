@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (175, 136225, 11, 17, '为什么我的文章打不开？', '为什么在情感驿站的文章我打不开？', '为什么在情感驿站的文章我打不开？', NULL, '2001-12-07 19:55:00', 0, '20020111224742_bbsid_136225_board_11_f990c570e2.html', '20020111224742');

@@ -9,3 +9,12 @@ parser/*.sqlite
 downloaded_html/
 web/node_modules/
 web/.wrangler/
+parser/new_*.sql
+parser/sync_*.sql
+parser/posts_*.sql
+parser/replies_*.sql
+parser/missing_*.sql
+parser/last_*.sql
+parser/fix_*.sql
+parser/chunk_*.sql
+parser/_tmp_*

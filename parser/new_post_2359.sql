@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2360, 216681, 9, 164, '询问、关切', '不知道紫风小朋友的腿部抽筋现象可有好转......？：P', '不知道紫风小朋友的腿部抽筋现象可有好转......？：P', NULL, '2003-10-27 09:03:00', 6, '20031220060740_bbsid_216681_board_9_d38bac24da.html', '20031220060740');

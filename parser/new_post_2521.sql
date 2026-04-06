@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2522, 221620, 5, 740, '告诉我你们现在的心情，好吗？', '我的心情不好，呵呵，晚上了都会这样。', '我的心情不好，呵呵，晚上了都会这样。', 'http://大步六大步六大步六点灯、点火、点秋香', '2003-12-28 01:15:00', 0, '20040106191645_bbsid_221620_board_5_ceecb6295f.html', '20040106191645');

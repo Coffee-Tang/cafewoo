@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2509, 204607, 8, 740, 'gg漂亮，俊俏，你喜欢吗', '漂亮俊俏的外表是吸引人的第一阶梯。然而这往往成为一段感情开始与结束的原因。', '漂亮俊俏的外表是吸引人的第一阶梯。然而这往往成为一段感情开始与结束的原因。', NULL, '2003-06-12 02:03:00', 1, '20040106185819_bbsid_204607_board_8_47e44b087e.html', '20040106185819');

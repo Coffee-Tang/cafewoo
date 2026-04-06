@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2087, 209528, 3, 760, 'SOS求助', '有人知道哪里找得到如：众志成城、姐妹弟兄这类励志歌曲啊', '有人知道哪里找得到如：众志成城、姐妹弟兄这类励志歌曲啊', NULL, '2003-07-23 13:59:00', 1, '20030819195123_bbsid_209528_board_3_f0b649a1ad.html', '20030819195123');

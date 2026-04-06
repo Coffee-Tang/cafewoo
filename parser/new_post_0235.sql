@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (236, 156326, 10, 554, '有玩网金的朋友注意了', 'darkduck.diy.163.com上有免费外挂试用版，赶快行动', 'darkduck.diy.163.com上有免费外挂试用版，赶快行动', NULL, '2002-04-01 19:27:00', 3, '20020406021546_bbsid_156326_board_10_77b1cd28bf.html', '20020406021546');

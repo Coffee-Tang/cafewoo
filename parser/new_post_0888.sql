@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (889, 184039, 12, 1426, 'poor', '我老公突然不打电话给我了！是不是不爱我了！', '我老公突然不打电话给我了！是不是不爱我了！', NULL, '2002-09-23 19:55:00', 2, '20021019170000_bbsid_184039_board_12_d49e382178.html', '20021019170000');

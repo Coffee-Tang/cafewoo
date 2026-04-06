@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1588, 196710, 9, 2001, '小弟', '我的联系方式：qq2560290。电话13666042880', '我的联系方式：qq2560290。电话13666042880', NULL, '2003-02-19 22:55:00', 0, '20030325064433_bbsid_196710_board_9_17889e90de.html', '20030325064433');

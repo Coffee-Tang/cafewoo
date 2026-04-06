@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (515, 163256, 9, 164, '本周有无精彩赛事期待？', '本周有无精彩赛事期待？若没有，训练如何？', '本周有无精彩赛事期待？若没有，训练如何？', NULL, '2002-05-24 10:19:00', 18, '20020617194436_bbsid_163256_board_9_396647fa2d.html', '20020617194436');

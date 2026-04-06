@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (944, 184103, 11, 996, '为什么进不了聊天室呀？', '我有一个星期进不了聊一室了呀？为什么？？？', '我有一个星期进不了聊一室了呀？为什么？？？', NULL, '2002-09-24 17:04:00', 0, '20021102010211_bbsid_184103_board_11_9fd2471f78.html', '20021102010211');

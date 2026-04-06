@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (2157, 214526, 16, 34, '严重期待魔兽世界', '如题，有意思要玩的报下名好联系', '如题，有意思要玩的报下名好联系', NULL, '2003-09-30 11:53:00', 3, '20031013135303_bbsid_214526_board_16_1d8e2748e5.html', '20031013135303');

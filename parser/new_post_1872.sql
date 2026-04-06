@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (1873, 206275, 3, 34, '强烈推荐《色即是空》', '比《我的野蛮女友》搞笑感人，利索点去买去借来看撒', '比《我的野蛮女友》搞笑感人，利索点去买去借来看撒', NULL, '2003-06-26 12:33:00', 3, '20030720063255_bbsid_206275_board_3_e1a2ea2505.html', '20030720063255');

@@ -1,0 +1,1 @@
+INSERT OR IGNORE INTO posts (id, bbsid, board_id, user_id, title, content, content_text, signature, posted_at, reply_count, source_file, wayback_ts) VALUES (892, 183684, 12, 218, '暴力内容,少儿不宜!', '我想扁人！！！可是力气没有他大~~~', '我想扁人！！！可是力气没有他大~~~', NULL, '2002-09-21 10:24:00', 10, '20021019170629_bbsid_183684_board_12_d215d92cee.html', '20021019170629');
