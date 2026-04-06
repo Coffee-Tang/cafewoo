@@ -9,6 +9,7 @@ import { userView } from './views/user'
 import { searchView } from './views/search'
 import { timelineView } from './views/timeline'
 import { guestbookView } from './views/guestbook'
+import { aboutView } from './views/about'
 
 type Bindings = { DB: D1Database }
 const app = new Hono<{ Bindings: Bindings }>()
@@ -83,6 +84,10 @@ app.get('/guestbook', async (c) => {
   return c.html(layout('留言板 - 咖啡看板', '留言板', guestbookView(entries, page, totalPages, msg)))
 })
 
+app.get('/about', (c) => {
+  return c.html(layout('关于 - 咖啡看板', '关于', aboutView()))
+})
+
 app.post('/guestbook', async (c) => {
   const form = await c.req.formData()
   const nickname = (form.get('nickname') as string || '').trim() || null
@@ -96,6 +101,17 @@ app.post('/guestbook', async (c) => {
   const ipHash = Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, '0')).join('').slice(0, 16)
   await addGuestbookEntry(c.env.DB, nickname || '匿名访客', content, ipHash)
   return c.redirect('/guestbook?msg=success')
+})
+
+app.notFound((c) => {
+  const body = `
+    <div style="text-align:center;padding:80px 24px;">
+      <div style="font-size:48px;color:#d4a574;">404</div>
+      <p style="color:#999;margin-top:12px;">这个页面已经消失在时光里了</p>
+      <a href="/" style="color:#d4a574;">返回首页</a>
+    </div>
+  `
+  return c.html(layout('未找到 - 咖啡看板', '', body), 404)
 })
 
 export default app
